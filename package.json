@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "dan's portfolio site",
+  "main": "app.js",
+  "start": "node app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "danbarredo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

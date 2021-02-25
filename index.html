@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dan's Site</title>
+        <link rel="stylesheet" type="text/css" href="public/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+        
+    </head>
+    <body>
+        <header id="home">
+            <!-- navbar -->
+            <nav id="nav" class="">
+                <div class="nav-center">
+                    <!-- nav header -->
+                    <div class="nav-header">
+                        <button class="nav-toggle" type="button" name="button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- links -->
+                    <div class="links-container">
+                        <ul class="links">
+                            <li>
+                                <a href="#home" class="scroll-link">home</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="scroll-link">about me</a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="scroll-link">projects</a>
+                            </li>
+                            <li>
+                                <a href="#others" class="scroll-link">other things</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="scroll-link">contact me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- banner -->
+            <div class="banner">
+                <div class="container">
+                    <h1>Daniel Barredo</h1>
+                    <p>A...  H U M A N</p>
+                </div>
+            </div>
+        </header>
+        <!-- about me -->
+        <section id="about" class="section">
+            <div class="title">
+                <h2>about me</h2>
+            </div>
+            <article class="about-section">
+                <!-- ABOUT BTNS -->
+                <div class="btn-container">
+                    <button class="tab-btn"  data-id="overview" type="button" name="button">overview</button>
+                    <button class="tab-btn"  data-id="skills" type="button" name="button">skills</button>
+                    <button class="tab-btn"  data-id="academic" type="button" name="button">academic background</button>
+                </div>
+                <!-- ABOUT SECTIONS -->
+                <!-- single section -->
+                <div class="about-content" id="overview">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <!-- end of section -->
+                <!-- single section -->
+                <div class="about-content" id="skills">
+                    <p>TODO: add short list here</p>
+                    <ul>
+                        <li>javascript</li>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>python</li>
+                    </ul>
+                </div>
+                <!-- end of section -->
+                <!-- single section -->
+                <div class="about-content" id="academic">
+                    <p>TODO: add academic background</p>
+                </div>
+                <!-- end of section -->
+            </article>
+
+        </section>
+        <!-- showcase some projects -->
+        <section id="projects" class="section">
+            <div class="title">
+                <h2>projects</h2>
+                <p>Some projects I have worked on for fun</p>
+            </div>
+            <div class="sub-section">
+                <p>TODO: add content here</p>
+                <p>screenshots, GIFs, short description of projects, links to projects</p>
+            </div>
+        </section>
+        <!-- some other hobbies -->
+        <section id="others" class="section">
+            <div class="title">
+                <h2>other things</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+        <!-- contact me -->
+        <section id="contact" class="section">
+            <div class="title">
+                <h2>contact me</h2>
+            </div>
+            <p>TODO: add submit form</p>
+        </section>
+        <!-- footer -->
+        <footer class="">
+            <p>
+                copyright &copy;Daniel Barredo <span id="date-year"></span>. all rights reserved
+            </p>
+        </footer>
+        <!-- back to top button -->
+            <a href="#home" class=" scroll-link to-top show-link">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript" src="js/about-tab.js"></script>
+        <script type="text/javascript">
+            const date = document.getElementById("date-year")
+            date.innerHTML = new Date().getFullYear()
+        </script>
+    </body>
+</html>
