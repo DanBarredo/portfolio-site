@@ -92,8 +92,7 @@ img {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     font-family: var(--font-1);
     letter-spacing: var(--spacing);
     text-transform: capitalize;
@@ -617,9 +616,12 @@ textarea {
     padding: 2rem;
     text-align: left;
 }
-
-#others {
-    background: #bbe1fa;
+#contact {
+    background: var(--light-font-2);
+}
+#contact h3 {
+    margin-top: 5rem;
+    text-align: center;
 }
 
 /* FOOTER */
