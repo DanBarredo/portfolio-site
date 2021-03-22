@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dan's Site</title>
+        <link rel="icon" type="image/png" href="public/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="public/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
             integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
             crossorigin="anonymous" />
-        
     </head>
     <body>
         <header id="home">
@@ -47,7 +47,7 @@
             <div class="banner">
                 <div class="container">
                     <h1>Daniel Barredo</h1>
-                    <p>A...  H U M A N</p>
+                    <p>A...  D E V E L O P E R</p>
                 </div>
             </div>
         </header>
@@ -66,52 +66,99 @@
                 <!-- ABOUT SECTIONS -->
                 <!-- single section -->
                 <div class="about-content" id="overview">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>I am a well-versed professional with a fluid skillset. My natural curiosity makes me want to learn about whatever catches my interest!</p>
+                    <p>(I'm also very fond of cheesecake and Japanese shoegaze...)</p>
                 </div>
                 <!-- end of section -->
                 <!-- single section -->
-                <div class="about-content" id="skills">
-                    <p>TODO: add short list here</p>
-                    <ul>
-                        <li>javascript</li>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>python</li>
-                    </ul>
+                <div class="about-content skill" id="skills">
+                    <table>
+                        <tbody>
+                            <thead>
+                                <td><h3>Technical Skills</h3></td>
+                                <td><h3>Other Skills</h3></td>
+                            </thead>
+                            <tr>
+                                <td>Javascript</td>
+                                <td>Graphic Design</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>Figma</td>
+                            </tr>
+                            <tr>
+                                <td>CSS3</td>
+                                <td>Adapatability</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>Collaboration</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>Resourcefulness</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!-- end of section -->
                 <!-- single section -->
                 <div class="about-content" id="academic">
-                    <p>TODO: add academic background</p>
+                    <div>
+                        <h3>Swansea University</h3>
+                        <h4>2016-2017: MSc Computer Science, Merit</h4>
+                    </div>
+                    <div>
+                        <h3>Swansea University</h3>
+                        <h4>2013-2016: BSc Zoology, 2nd Class Honours</h4>
+                    </div>
                 </div>
                 <!-- end of section -->
             </article>
-
         </section>
+        <!-- end of about section -->
         <!-- showcase some projects -->
         <section id="projects" class="section">
             <div class="title">
                 <h2>projects</h2>
-                <p>Some projects I have worked on for fun</p>
+                <h4>Some projects I have worked on for fun</h4>
             </div>
             <div class="sub-section">
-                <p>TODO: add content here</p>
-                <p>screenshots, GIFs, short description of projects, links to projects</p>
+                <h4>Check the weather forecast <a href="https://dbarredo-simpleweatherapp.netlify.app/">here</a></h4>
+                <h4>Or play some <a href="https://some-drumkit-by-dan.netlify.app/"><strong>D R U M S</strong></a></h4>
+                <h4>Find some more of my projects on my <a href="https://github.com/DanBarredo">Github</a>!</h4>
+                <br>
+                <p>(Note: This section is a work in progess...)</p>
             </div>
         </section>
         <!-- some other hobbies -->
         <section id="others" class="section">
             <div class="title">
                 <h2>other things</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h4>Note: More things to come here...</h4>
             </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
         <!-- contact me -->
         <section id="contact" class="section">
             <div class="title">
                 <h2>contact me</h2>
             </div>
-            <p>TODO: add submit form</p>
+            <p>Contact functionality in progress. In the mean time, email me at <strong>dvbarredo@outlook.com</strong>.</p>
+            <div class="contact-form">
+                <form action="">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your name..">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            
         </section>
         <!-- footer -->
         <footer class="">
